@@ -1,0 +1,10 @@
+{
+  "title": "Currywurst",
+  "image": "https://dummyimage.com/600x400/000/fff",
+  "description": "Hodor. Hodor hodor, hodor. Hodor hodor hodor hodor hodor. Hodor. Hodor! Hodor hodor, hodor; hodor hodor hodor. Hodor. Hodor hodor; hodor hodor - hodor, hodor, hodor hodor. Hodor, hodor. Hodor. Hodor, hodor hodor hodor; hodor hodor; hodor hodor hodor! Hodor hodor HODOR! Hodor hodor... Hodor hodor hodor...",
+  "author": {
+    "name": "Hodor",
+    "avatarSource": "https://i.kym-cdn.com/entries/icons/square/000/015/238/hodor.JPG"
+  },
+  "neededItems": ["Bratwurst", "Ketchup", "Spices"]
+}
