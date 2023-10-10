@@ -1,15 +1,10 @@
-import Header from "@/components/Header/Header";
-import Hero from "@/components/Hero/Hero";
 import RecipePreview from "@/components/RecipePreview/RecipePreview";
 import Divider from "@/primitives/Divider";
 
-export default function HomePage() {
+export default function HomePage({ recipes }) {
   return (
     <>
-      <Header />
-      <Hero />
-      <Divider />
-      <RecipePreview />
+      <RecipePreview recipes={recipes} />
       <Divider />
     </>
   );
