@@ -1,6 +1,8 @@
 import Image from "next/image";
 import Link from "next/link";
 import styled from "styled-components";
+import ColoredHeadline from "./ColoredHeadline";
+import NeededItems from "./NeededItems";
 
 export default function Card({
   imgSource,
@@ -10,20 +12,15 @@ export default function Card({
   neededItems,
   id,
 }) {
-  console.log(id);
   return (
     <StyledCardLink href={`/${id}`}>
       <StyledCard>
         <StyledImage src={imgSource} width={300} height={200} alt={title} />
         <TextDiv>
-          <StyledCardHeadline>{title}</StyledCardHeadline>
+          <ColoredHeadline>{title}</ColoredHeadline>
           <StyledCardDescription>{description}</StyledCardDescription>
           <br />
-          <StyledList>
-            {neededItems.map((item) => (
-              <StyledItem key={item}>{item}</StyledItem>
-            ))}
-          </StyledList>
+          <NeededItems items={neededItems} />
           <StyledAuthorName>
             ~ from <strong>{author}</strong>
           </StyledAuthorName>
@@ -50,10 +47,6 @@ const TextDiv = styled.div`
   margin: 0.5rem;
 `;
 
-const StyledCardHeadline = styled.h2`
-  color: #00cc99;
-`;
-
 const StyledCardDescription = styled.p`
   margin-top: 5px;
   overflow: hidden;
@@ -64,20 +57,6 @@ const StyledCardDescription = styled.p`
   overflow: hidden;
   text-overflow: ellipsis;
   -webkit-line-clamp: 4;
-`;
-
-const StyledList = styled.ul`
-  display: flex;
-  gap: 10px;
-  font-size: 0.9rem;
-  list-style-type: none;
-  margin-bottom: 10px;
-`;
-
-const StyledItem = styled.li`
-  background-color: #1c1c1c;
-  border-radius: 0 10px 10px 10px;
-  padding: 3px;
 `;
 
 const StyledAuthorName = styled.p`
