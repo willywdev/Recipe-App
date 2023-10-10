@@ -1,4 +1,4 @@
-import Link from "next/link";
+import ActionButton from "@/primitives/ActionButton";
 import styled from "styled-components";
 
 export default function Hero() {
@@ -27,22 +27,4 @@ const LandingText = styled.h2`
 const Highlight = styled.span`
   color: #1c1c1c;
   background: #00cc99;
-`;
-
-const ActionButton = styled(Link)`
-  padding: 1rem;
-  background: #00cc99;
-  text-decoration: none;
-  color: #1c1c1c;
-  border-radius: 10px;
-  font-size: 1.1rem;
-  font-weight: bold;
-  width: max-content;
-
-  &:hover {
-    color: #ececec;
-  }
-  &:active {
-    transform: scale(0.95);
-  }
 `;
