@@ -19,7 +19,7 @@ export default function RecipePreview({ recipes }) {
         ))}
       </StyledMain>
       <FlexDiv>
-        <ActionButton href="/">See all Recipes</ActionButton>
+        <ActionButton href="/recipes">See all Recipes</ActionButton>
       </FlexDiv>
     </>
   );

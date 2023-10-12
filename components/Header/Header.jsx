@@ -5,7 +5,7 @@ import styled from "styled-components";
 export default function Header() {
   return (
     <StyledHeader>
-      <InternalLink href="/">All Recipes</InternalLink>
+      <InternalLink href="/recipes">All Recipes</InternalLink>
       <StyledLink href="/">
         <h1>Hodor Recipes</h1>
       </StyledLink>
