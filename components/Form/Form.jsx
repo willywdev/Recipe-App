@@ -78,19 +78,25 @@ const StyledInput = styled.input`
   width: 100%;
   height: 2rem;
   margin-bottom: 1rem;
+  border-radius: 5px;
+  border: 1px solid gray;
+  padding: 3px;
 `;
 
 const StyledLabel = styled.label`
   display: table-cell;
   width: 40%;
   margin-bottom: 1rem;
-  font-weight: bold;
 `;
 
 const StyledTextarea = styled.textarea`
+  padding: 3px;
   display: table-cell;
   width: 100%;
+  min-height: 15rem;
   margin-bottom: 1rem;
+  border-radius: 5px;
+  border: 1px solid gray;
 `;
 
 const FormWrapper = styled.div`
